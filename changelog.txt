@@ -1,6 +1,14 @@
 ------------------------------------------------------------------------------------------------------------------------------
 HotFix Change Log
 ------------------------------------------------------------------------------------------------------------------------------
+//changelog version 0.85 v3 Hotfixes and Features Published 2025/05/26
+Module:
+-added: PVEZ PVP Zone Functionality 
+	Expansion AI Patrol Spawn Functionality
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
 //changelog version 0.85 v2 Hotfixes and Features Published 2023/11/10
 Module:
 -added: Tent Check Function from Discord - Credits: Vandest
