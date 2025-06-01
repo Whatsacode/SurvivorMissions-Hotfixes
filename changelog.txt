@@ -1,6 +1,46 @@
 ------------------------------------------------------------------------------------------------------------------------------
 HotFix Change Log
 ------------------------------------------------------------------------------------------------------------------------------
+//changelog version 0.85 v4 Hotfixes and Features Published 2025/06/01
+Module:
+-added: Overrides to clean-up logs.
+
+Server files:
+-added: Updated EWD - Chernarus
+
+	FishBandit Mission
+		-added: Updated FirePlace
+			PVEZ PVP Zone Function
+			Expansion AI Patrol Spawn Function - true by default (will only load if Exp AI installed) *25m Radius Patrol*
+			Scheduled Restart Timer Check
+			Added Dead Bodies to Event
+			Credit to Author: Xellose
+
+	TrainWreck Mission
+		-added: PVEZ PVP Zone Function
+			Expansion AI Patrol Spawn Function
+			Scheduled Restart Timer Check
+			Fix Infected going through Train Wagons
+			Credit to Author: Tarkules
+
+	CaptureFlag Mission
+		-added: PVEZ PVP Zone Function
+			Expansion AI Patrol Spawn Function - true by default (will only load if Exp AI Installed) *700m Intersecting Patrol*
+			Scheduled Restart Timer Check
+			FirePlace Rock Circle / No Longer Floating
+			Credit to Author: Funkdoc
+
+	Convoy Mission
+		-Removed: Any code relating to any other mod other than Expansion AI.
+
+		-Added: PVEZ PVP Zone Function
+			Expansion AI Patrol Spawn Function - true by default (will only load if Exp AI Installed) *Friendly Patrol to Assist on Mission if Activated.*
+			Scheduled Restart Timer Check
+			Mission Text will be different if you have Expansion AI turned on/off
+			Convoy is now made of Cars from DayZ not Builder Items - This will make it work with any Vanilla Install.
+			Credit to Author: Cygnus
+			
+------------------------------------------------------------------------------------------------------------------------------
 //changelog version 0.85 v3 Hotfixes and Features Published 2025/05/26
 Module:
 -added: PVEZ PVP Zone Functionality 
