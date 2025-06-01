@@ -1,10 +1,10 @@
 class PlaneCrashMission extends SurvivorMissions
 {
 	// Activate Expansion AI Patrol
-	bool SpawnPatrolEnabled = false;
+	bool SpawnPatrolEnabled = true;
 
 	// Activate PVEZ PVP Zone
-	bool SpawnPVPZone = false;
+	bool SpawnPVPZone = true;
 
 	#ifdef PVEZ
 	#ifdef PVEZ
