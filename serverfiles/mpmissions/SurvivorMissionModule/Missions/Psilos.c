@@ -490,7 +490,11 @@ class PsilosMission extends SurvivorMissions
 				} 
 			
 				//spawn mushroom
-				m_MissionObjects.Insert( GetGame().CreateObject( "PsilocybeMushroom", SpawnPos ));	
+				m_MissionObjects.Insert( GetGame().CreateObject( "PsilocybeMushroom", SpawnPos ));
+				if (m_MissionObjects.Get(j))
+				{
+					m_MissionObjects.Get(j).PlaceOnSurface();
+				}
 			}
 				
 			Print("[SMM] Survivor Mission "+ m_selectedMission +" :: "+ m_MissionName +" ...mission deployed!");

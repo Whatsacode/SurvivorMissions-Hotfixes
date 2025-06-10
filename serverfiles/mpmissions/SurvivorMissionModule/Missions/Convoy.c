@@ -4,8 +4,15 @@ class ConvoyMission extends SurvivorMissions
 	Car RewardCar; // vehicle reward, for this mission Heli is actually a hmmwv or dingo.
 	Object TireFire;
 	vector Foxholepos;
+
+	#ifdef ENFUSION_AI_PROJECT
+	#ifdef EXPANSIONMODAI
+
 	eAIGroup group;
 	eAIGroup m_ConvoyAIGroup;
+
+	#endif
+	#endif
 
 	//Mission settings
 	int HordeDensity = 30;					//infected per wave 
@@ -924,12 +931,20 @@ class ConvoyMission extends SurvivorMissions
 
 	override void PlayerChecks( PlayerBase player )
 	{	
+
+	
+		#ifdef ENFUSION_AI_PROJECT
+		#ifdef EXPANSIONMODAI
+
 		// Add player to AI group and set as leader if not already
 		if (m_ConvoyAIGroup && player.GetGroup() != m_ConvoyAIGroup)
 		{
 			player.SetGroup(m_ConvoyAIGroup);
 			Print("[SMM] Added player " + player.GetIdentity().GetName() + " to Convoy AI group.");
 		}
+
+		#endif
+		#endif
 
 		for ( int ix=0; ix < m_MissionAIs.Count(); ix++)
 		{
@@ -944,6 +959,7 @@ class ConvoyMission extends SurvivorMissions
 				}
 			}
 		}
+
 		//now we check if the array has the wanted amount of dead infected( I use 5 less than spawn in case a few get stuck in a rock)
 		if ( DeadInfected.Count() >= 25 && !secondwavespawned)
 		{
@@ -954,6 +970,7 @@ class ConvoyMission extends SurvivorMissions
 			string icon = "set:dayz_inventory image:walkietalkie";            
 			NotificationSystem.SendNotificationToPlayerIdentityExtended( player.GetIdentity() , 10.0, m_MissionInformant + ":", message, icon );
 		}
+		
 		//now we check if the array has the wanted amount of dead infected ( I use 5 less than spawn in case a few get stuck in a rock)
 		if ( DeadInfected.Count() >= 55 && !m_RewardsSpawned)
 		{
