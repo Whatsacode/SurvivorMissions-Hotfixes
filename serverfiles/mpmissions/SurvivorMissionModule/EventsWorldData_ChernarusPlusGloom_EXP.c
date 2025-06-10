@@ -7,7 +7,8 @@ class EventsWorldData extends SurvivorMissions
 	static ref array<Object> ObjectList = new array<Object>; 
 	static ref array<CargoBase> ObjectCargoList = new array<CargoBase>;
 	static ref array<vector> TerritoryBldChk = new array<vector>;
-	
+
+
 	void EventsWorldData()
 	{
 		//Mission event																		//Mission position (absolute or BuildingPos)
@@ -817,7 +818,127 @@ class EventsWorldData extends SurvivorMissions
 		MissionEvents.Insert("UrbanMall Vysotovo central Zelenogorsk");						MissionPositions.Insert("5660.8 65.6 2444.2");
 		MissionEvents.Insert("UrbanMall Zelenogorsk central Chernogorsk");					MissionPositions.Insert("2673.3 206.9 5281.0");
 		//794
-					
+		MissionEvents.Insert("FishBandit Tikhiyzaliv_Harbor North Vysotovo");				MissionPositions.Insert("1190.9 3.1 2199.4");
+		MissionEvents.Insert("FishBandit Tikhiyzaliv_River North Vysotovo");				MissionPositions.Insert("1014.4 7.9 2419.9");
+		MissionEvents.Insert("FishBandit Komarovo_Pier West Vysotovo");						MissionPositions.Insert("3507.0 5.08 2136.6");
+		MissionEvents.Insert("FishBandit Balota_Pier East Vysotovo");						MissionPositions.Insert("4470.8 3.8 2225.8");
+		MissionEvents.Insert("FishBandit Mys_Golova_LightHouse East Vysotovo");				MissionPositions.Insert("8568.8 5.3 2383.9");
+		MissionEvents.Insert("FishBandit Topolka_Dam North Elektrozavodsk");				MissionPositions.Insert("10203.2 50.2 3767.9");
+		MissionEvents.Insert("FishBandit Kamyshovo East Elektrozavodsk");					MissionPositions.Insert("12357.7 2.8 3479.7");
+		MissionEvents.Insert("FishBandit Rify_LightHouse North Severograd");				MissionPositions.Insert("13987.4 33.0 11266.2");
+		MissionEvents.Insert("FishBandit Chernoyeozero_Lake South Severograd");				MissionPositions.Insert("13356.5 68.5 11900.2");
+		//803
+		MissionEvents.Insert("TrainWreck Zaprudnoe south 120");                             MissionPositions.Insert("5427.648926 185.706879 12313.075195");
+		MissionEvents.Insert("TrainWreck Ratnoe south 76");                                 MissionPositions.Insert("5935.448730 176.831604 12323.501953");
+		MissionEvents.Insert("TrainWreck Svergino south 45");                               MissionPositions.Insert("10187.585938 84.612167 13904.163086");
+		MissionEvents.Insert("TrainWreck Zabolotye east 40");                               MissionPositions.Insert("1659.666260 274.147369 9659.007813");
+		MissionEvents.Insert("TrainWreck Rostoki west 165");                                MissionPositions.Insert("735.744263 193.541916 8585.052734");
+		MissionEvents.Insert("TrainWreck Zvir SouthEast 290");                              MissionPositions.Insert("971.379333 155.661301 5113.295898");
+		MissionEvents.Insert("TrainWreck Rify north 55");                                   MissionPositions.Insert("13803.068359 5.679799 11719.072266");
+		MissionEvents.Insert("TrainWreck Turovo west 215");                                 MissionPositions.Insert("13375.755859 13.376265 13914.224609");
+		MissionEvents.Insert("TrainWreck Novodmitrovsk south 262");                         MissionPositions.Insert("11962.873047 56.610484 14150.514648");
+		//812
+		MissionEvents.Insert("CaptureFlag Balota_Airstrip central Base_1");					MissionPositions.Insert("4915 10 2571");
+		MissionEvents.Insert("CaptureFlag Balota central Base_1");							MissionPositions.Insert("4572 8 2471");
+		MissionEvents.Insert("CaptureFlag Berezino northwest Base_1");						MissionPositions.Insert("11625 68 9329");
+		MissionEvents.Insert("CaptureFlag Berezino southeast Base_1");						MissionPositions.Insert("12413 33 8792");
+		MissionEvents.Insert("CaptureFlag Elektrozavodsk north Base_1");					MissionPositions.Insert("10195 23 2665");
+		MissionEvents.Insert("CaptureFlag Elektrozavodsk east Base_1");						MissionPositions.Insert("10980 7 2818");
+		MissionEvents.Insert("CaptureFlag Green_Mountain north Base_1");					MissionPositions.Insert("3545 345 6392");
+		MissionEvents.Insert("CaptureFlag Green_Mountain southeast Base_1");				MissionPositions.Insert("4236 332 5524");
+		MissionEvents.Insert("CaptureFlag Grishino central Base_1");						MissionPositions.Insert("6074 267 10370");
+		MissionEvents.Insert("CaptureFlag Grishino central Base_2");						MissionPositions.Insert("6004 278 10213");
+		MissionEvents.Insert("CaptureFlag Krasnostav_Airfield central Base_1");				MissionPositions.Insert("12104 139 12571");
+		MissionEvents.Insert("CaptureFlag Krasnostav_Airfield central Base_2");				MissionPositions.Insert("11791 140 12649");	
+		MissionEvents.Insert("CaptureFlag Krasnostav_Airfield central Base_3");				MissionPositions.Insert("12168 140 12646");
+		MissionEvents.Insert("CaptureFlag Krasnostav east Base_1");							MissionPositions.Insert("11562 163 12261");
+		MissionEvents.Insert("CaptureFlag Lopatino north Base_1");							MissionPositions.Insert("2659 282 10224");
+		MissionEvents.Insert("CaptureFlag Novaya_Petrovka northeast Base_1");				MissionPositions.Insert("3793 204 13328");
+		MissionEvents.Insert("CaptureFlag Novodmitrovsk central Base_1");					MissionPositions.Insert("11475 38 14356");
+		MissionEvents.Insert("CaptureFlag Novy_Sobor central Base_1");						MissionPositions.Insert("6998 292 7596");
+		MissionEvents.Insert("CaptureFlag Pulkovo northwest Base_1");						MissionPositions.Insert("4711 305 5932");
+		MissionEvents.Insert("CaptureFlag Pustoshka northeast Base_1");						MissionPositions.Insert("3378 292 8060");
+		MissionEvents.Insert("CaptureFlag Prigorodki northeast Base_1");					MissionPositions.Insert("7482 6 3456");
+		MissionEvents.Insert("CaptureFlag Rogovo north Base_1");							MissionPositions.Insert("4655 290 6984");
+		MissionEvents.Insert("CaptureFlag Severograd north Base_1");						MissionPositions.Insert("7809 142 12925");
+		MissionEvents.Insert("CaptureFlag Severograd east Base_1");							MissionPositions.Insert("8566 104 12755");
+		MissionEvents.Insert("CaptureFlag Solnichniy north Base_1");						MissionPositions.Insert("13374 6 6436");
+		MissionEvents.Insert("CaptureFlag Solnichniy north Base_2");						MissionPositions.Insert("13296 9 6415");
+		MissionEvents.Insert("CaptureFlag Stary_Sobor north Base_1");						MissionPositions.Insert("6383 331 8160");
+		MissionEvents.Insert("CaptureFlag Stary_Sobor south Base_1");						MissionPositions.Insert("5858 317 7647");
+		MissionEvents.Insert("CaptureFlag Svetlojarsk south Base_1");						MissionPositions.Insert("13871 33 12965");
+		MissionEvents.Insert("CaptureFlag Svetlojarsk west Base_1");						MissionPositions.Insert("13637 31 13375");
+		MissionEvents.Insert("CaptureFlag Tisy_Military_Base north Base_1");				MissionPositions.Insert("1233 454 14522");	
+		MissionEvents.Insert("CaptureFlag Vybor_Airfield central Base_1");					MissionPositions.Insert("4515 341 10295");
+		MissionEvents.Insert("CaptureFlag Vybor_Airfield central Base_2");					MissionPositions.Insert("4663 338 10333");
+		MissionEvents.Insert("CaptureFlag Vybor_Airfield central Base_3");					MissionPositions.Insert("4710 342 9980");
+		MissionEvents.Insert("CaptureFlag Vybor_Airfield central Base_4");					MissionPositions.Insert("4324 341 10612");
+		MissionEvents.Insert("CaptureFlag Vybor_Military_Base central Base_1");				MissionPositions.Insert("4658 322 8274");
+		MissionEvents.Insert("CaptureFlag Vybor central Base_1");							MissionPositions.Insert("4007 324 9007");
+		MissionEvents.Insert("CaptureFlag Zelenogorsk west Base_1");						MissionPositions.Insert("2405 190 5314");
+		MissionEvents.Insert("CaptureFlag Zelenogorsk east Base_1");						MissionPositions.Insert("2967 214 5126");
+		MissionEvents.Insert("CaptureFlag Zub_Castle east Base_1");							MissionPositions.Insert("6897 328 5733");
+		//852
+		MissionEvents.Insert("Convoy Zelenogorsk SouthWest 221");                           MissionPositions.Insert("2062.7 201.4 4682.36");
+        MissionEvents.Insert("Convoy Camp_Kometa North 39");                                MissionPositions.Insert("10345.61 77.24 4212.25");
+        MissionEvents.Insert("Convoy Vybor East 62");                                       MissionPositions.Insert("4421.93 323.143 8795.58");
+        MissionEvents.Insert("Convoy Pustoshka South 201");                                 MissionPositions.Insert("2877.229 331.362 7250.868");
+        MissionEvents.Insert("Convoy Skalisty South 75");                                   MissionPositions.Insert("13924.99 29.359 2895.72");
+        MissionEvents.Insert("Convoy Mogilevka South 123");                                 MissionPositions.Insert("7620.859 194.498 4934.912");
+        MissionEvents.Insert("Convoy Grishino West 50");                                    MissionPositions.Insert("5286.633 306.14 10400.24");
+        MissionEvents.Insert("Convoy Sinystok West 120");                                   MissionPositions.Insert("679.792 343.98 12262.139");
+        MissionEvents.Insert("Convoy Tisy_Radar_Dish East 230");                            MissionPositions.Insert("880.799 482.31 13765.77");
+        MissionEvents.Insert("Convoy Glubokoye_Lake East 320");                             MissionPositions.Insert("2492.39 444.63 14954.402");
+        MissionEvents.Insert("Convoy Tri_Kresta_Military NorthEast 190");                   MissionPositions.Insert("867.42 333.258 9751.955");
+        MissionEvents.Insert("Convoy Kalinovka North 18");                                  MissionPositions.Insert("7406.028 290.922 14221.244");
+        MissionEvents.Insert("Convoy Novodmitrovsk East 305");                              MissionPositions.Insert("12947.703 14.672 14107.554");
+        MissionEvents.Insert("Convoy Novy_Sobor East 315");                                 MissionPositions.Insert("7587.97 322.804 7477.124");
+        MissionEvents.Insert("Convoy Elektro West 329");                                    MissionPositions.Insert("8986.461 7.64 2173.67");
+        MissionEvents.Insert("Convoy Kamenka NorthWest 111");                               MissionPositions.Insert("2969.54 269.47 9334.41");
+		//867
+
+		#ifdef ENFUSION_AI_PROJECT
+		#ifdef EXPANSIONMODAI
+
+		MissionEvents.Insert("EscortDefend Berezino Northcentral Berezino");          		MissionPositions.Insert("12228 18 9521");
+		MissionEvents.Insert("EscortDefend Berezino Northcentral Berezino");          		MissionPositions.Insert("12193 12 9689");
+		MissionEvents.Insert("EscortDefend Berezino Northcentral Berezino");          		MissionPositions.Insert("12307 11 9605");
+		MissionEvents.Insert("EscortDefend Berezino Southcentral Berezino");          		MissionPositions.Insert("12417 8 9526");
+		MissionEvents.Insert("EscortDefend Berezino Orchard Berezino");          			MissionPositions.Insert("12725 6 9453");
+		MissionEvents.Insert("EscortDefend Berezino North Berezino");          				MissionPositions.Insert("12753 6 9858");
+		MissionEvents.Insert("EscortDefend Berezino North Berezino");          				MissionPositions.Insert("12824 6 9835");    
+		MissionEvents.Insert("EscortDefend Dolina West Dolina");            				MissionPositions.Insert("11061 92 6636");
+		MissionEvents.Insert("EscortDefend Dolina South Dolina");            				MissionPositions.Insert("11255 76 6509");
+		MissionEvents.Insert("EscortDefend Dolina North Dolina");            				MissionPositions.Insert("11337 80 6614");
+		MissionEvents.Insert("EscortDefend Dolina East Dolina");            				MissionPositions.Insert("11708 76 6671");
+		MissionEvents.Insert("EscortDefend Grishino South Grishino");         				MissionPositions.Insert("5868 276 10146");
+		MissionEvents.Insert("EscortDefend Grishino Central Grishino");          			MissionPositions.Insert("5928 268 10327");
+		MissionEvents.Insert("EscortDefend Grishino North Grishino");          				MissionPositions.Insert("6067 267 10448");
+		MissionEvents.Insert("EscortDefend Gorka West Gorka");             					MissionPositions.Insert("9306 330 8879");
+		MissionEvents.Insert("EscortDefend Gorka North Gorka");             				MissionPositions.Insert("9468 304 8869");
+		MissionEvents.Insert("EscortDefend Gorka East Gorka");             					MissionPositions.Insert("9867 286 8818");
+		MissionEvents.Insert("EscortDefend Kamyshovo West Kamyshovo");         				MissionPositions.Insert("11985 7 3499");
+		MissionEvents.Insert("EscortDefend Kamyshovo Central Kamyshovo");         			MissionPositions.Insert("12037 6 3546");
+		MissionEvents.Insert("EscortDefend Kamyshovo East Kamyshovo");         				MissionPositions.Insert("12204 6 3523");
+		MissionEvents.Insert("EscortDefend Komarovo Central Komarovo");          			MissionPositions.Insert("3579 7 2465");
+		MissionEvents.Insert("EscortDefend Krasnostav West Krasnostav");        			MissionPositions.Insert("10890 236 12346");
+		MissionEvents.Insert("EscortDefend Krasnostav West Krasnostav");        			MissionPositions.Insert("10966 228 12439");
+		MissionEvents.Insert("EscortDefend Krasnostav North Krasnostav");        			MissionPositions.Insert("11187 202 12364");
+		MissionEvents.Insert("EscortDefend Krasnostav East Krasnostav");        			MissionPositions.Insert("11314 192 12245");
+		MissionEvents.Insert("EscortDefend Nadezhdino North Nadezhdino");        			MissionPositions.Insert("5896 135 4830");
+		MissionEvents.Insert("EscortDefend Nadezhdino Northeast Nadezhdino");        		MissionPositions.Insert("6065 158 4904");
+		MissionEvents.Insert("EscortDefend Novaya_Petrovka Northwest Novaya_Petrovka");   	MissionPositions.Insert("3086 208 13184");
+		MissionEvents.Insert("EscortDefend Novaya_Petrovka Southeast Novaya_Petrovka");   	MissionPositions.Insert("3879 194 12827");
+		MissionEvents.Insert("EscortDefend Novoselki West Novoselki");         				MissionPositions.Insert("6099 53 3166");
+		MissionEvents.Insert("EscortDefend Novoselki North Novoselki");         			MissionPositions.Insert("6102 55 3360");
+		MissionEvents.Insert("EscortDefend Novoselki South Novoselki");         			MissionPositions.Insert("6137 26 2906");
+		MissionEvents.Insert("EscortDefend Novoselki South Novoselki");         			MissionPositions.Insert("6129 45 3027");
+
+		#endif
+		#endif
+
+		//901
+
 		// ***Add new mission events below this line	
 		//example: MissionEvents.Insert("MyNewMissionType Location LocationDir additionalParam");	MissionPositions.Insert("6869.6 350.3 10277.7");
 	}
@@ -836,6 +957,11 @@ class EventsWorldData extends SurvivorMissions
 		if ( m_MissionType == "Shrooms" )		m_MissionInstance = new ShroomsMission();
 		if ( m_MissionType == "Transport" )		m_MissionInstance = new TransportMission();
 		if ( m_MissionType == "UrbanMall" )		m_MissionInstance = new UrbanMallMission();
+		if ( m_MissionType == "FishBandit" )	m_MissionInstance = new FishBanditMission();
+		if ( m_MissionType == "TrainWreck" )    m_MissionInstance = new TrainWreckMission();
+		if ( m_MissionType == "CaptureFlag" )   m_MissionInstance = new CaptureFlagMission();
+		if ( m_MissionType == "Convoy" )   		m_MissionInstance = new ConvoyMission();
+		if ( m_MissionType == "EscortDefend" )  m_MissionInstance = new EscortDefendMission();
 		// ***Add new mission types below this line when new mission events were defined 
 		//example: if ( ( m_MissionType == "MyNewMissionType" )		m_MissionInstance = new MyNewMission();
 	}
@@ -940,8 +1066,8 @@ class EventsWorldData extends SurvivorMissions
 		
 		return true;
 	}
-
-		static void TerritoryCheck()
+	
+	static void TerritoryCheck()
     {
         Print("[SEM] EWD Territory Check Start!" );
         int TerrCount = 0;
@@ -1035,7 +1161,7 @@ class EventsWorldData extends SurvivorMissions
         if ( TerrCount > 0 ) Print("[SEM] EWD Territory Check Summary: "+ TerrCount +" primary mission zones have territories or tents too close and have been removed from the pool!");
         if ( SecCount > 0 ) Print("[SEM] EWD Territory Check Summary: "+ SecCount +" scecondary mission zones have territories or tents too close and have been removed from the pool!");
     }
-	
+
 	static void CheckEWD()
 	{
 		int ErrorCount = 0;
@@ -1073,7 +1199,7 @@ class EventsWorldData extends SurvivorMissions
 	{
 		//List all mission types with no prim. MissionBuilding here!
 		ref array<string> ExcludedTypes = new array<string>;
-		ExcludedTypes.InsertArray( {"Camp","Shrooms","Graveyard","BearHunt","PlaneCrash","Horde"} );	
+		ExcludedTypes.InsertArray( {"Camp","Shrooms","Graveyard","BearHunt","PlaneCrash","Horde","FishBandit","TrainWreck","CaptureFlag","Convoy","EscortDefend"} );	
 		string building;
 		bool BuildingFound;
 				
@@ -1117,7 +1243,7 @@ class EventsWorldData extends SurvivorMissions
 	{
 		//List all mission types with no sec. MissionBuilding here!
 		ref array<string> ExcludedTypes = new array<string>;
-		ExcludedTypes.InsertArray( {"Apartment","Camp","Graveyard","PlaneCrash","Horde"} );
+		ExcludedTypes.InsertArray( {"Apartment","Camp","Graveyard","PlaneCrash","Horde","TrainWreck","CaptureFlag","Convoy"} );
 		
 		ref array<vector> ExtendedPosList = new array<vector>;
 		string building;
@@ -1132,6 +1258,8 @@ class EventsWorldData extends SurvivorMissions
 		else if ( type == "Shrooms")				building = "Land_City_Hospital";
 		else if ( type == "Transport")				building = "Land_FuelStation_Build";
 		else if ( type == "UrbanMall")				building = "Land_City_PoliceStation";
+		else if ( type == "FishBandit")				building = "Land_City_School";
+		else if ( type == "EscortDefend")			building = "Land_City_PoliceStation";
 		else
 		{
 			Print("[SEM] EWD Check WARNING :: Mission "+ nr +" - Mission type "+ type +" is undefined in EventsWorldData!");
@@ -1140,17 +1268,17 @@ class EventsWorldData extends SurvivorMissions
 		
 		if ( GetBuildingsAtLoc( building, location, ExtendedPosList ))
 		{
-			if ( nr == -1 )
-            {
-                for ( int d=0; d < ExtendedPosList.Count(); d++) 
-                TerritoryBldChk.Insert( ExtendedPosList.Get(d) );
-
-                return ExtendedPosList.Count() > 0;
-            }
-
-
 			for ( int k=0; k < ExtendedPosList.Count(); k++)
 			{
+			
+				if ( nr == -1 )
+				{
+					for ( int d=0; d < ExtendedPosList.Count(); d++) 
+					TerritoryBldChk.Insert( ExtendedPosList.Get(d) );
+
+					return ExtendedPosList.Count() > 0;
+				}
+
 				BuildingFound = false;
 				
 				vector pos = ExtendedPosList.Get(k);

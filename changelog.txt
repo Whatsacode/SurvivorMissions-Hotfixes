@@ -1,6 +1,22 @@
 ------------------------------------------------------------------------------------------------------------------------------
 HotFix Change Log
 ------------------------------------------------------------------------------------------------------------------------------
+//changelog version 0.85 v5 Hotfixes and Features Published 2025/06/10
+
+Module:
+-added: Nothing
+
+Server Files
+-added: Updated Chernarus EWD
+	Added #ifdef before Escort Missions - If no Expansion AI at EWD check - Mission will not load.
+
+	EscortBot Mission *THIS MISSION NEED EXPANSION AI TO WORK*
+		-added: Updated Code Base to work with New Expansion AI
+			PVEZ PVP Zone Function
+			Scheduled Restart Timer Check	
+			Credit to Author: Xellose
+			
+------------------------------------------------------------------------------------------------------------------------------
 //changelog version 0.85 v4 Hotfixes and Features Published 2025/06/01
 Module:
 -added: Overrides to clean-up logs.
