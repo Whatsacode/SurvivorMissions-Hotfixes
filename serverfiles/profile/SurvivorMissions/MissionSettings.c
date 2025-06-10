@@ -42,8 +42,8 @@ class MissionSettings
 	
 	//Mission module settings
 	static int RestartCycleTime = 14400;  //seconds (!Do not set lower than 3600 seconds), Scheduled server restart      edit: 14,400 = 4 hours
-	static int DelayTime = 60;					//seconds (!Do not set lower than 300 seconds), delay time of first and between previous and next mission
-	static int CleanUpDlyTime = 10;			//seconds (!Do not set lower than 180 seconds), delay time of OnStartCleanup executed once after mpmission is loaded by the server
+	static int DelayTime = 300;					//seconds (!Do not set lower than 300 seconds), delay time of first and between previous and next mission
+	static int CleanUpDlyTime = 180;			//seconds (!Do not set lower than 180 seconds), delay time of OnStartCleanup executed once after mpmission is loaded by the server
 	static int MsgFreqDlyTime = 1800;			//seconds (!Do not set lower than 900 seconds), radio frequency information delay time 
 	static float RadioFrequency = 99.7;			//Mhz (!Do only set a frequency from channels used ingame), radio frequency of mission channel	
 	static int MsgWaitTime = 300;				//seconds (!Do not set lower than 300 seconds), message interval, cycle duration time
