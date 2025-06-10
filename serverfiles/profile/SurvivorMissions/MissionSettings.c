@@ -9,7 +9,7 @@ class MissionSettings
 	static string StoriesFilePath = "$profile:\\SurvivorMissions\\SurvivorStories_";
 	
 	//DebugMode ( Useful for creating your own missions )
-	const bool DebugMode = true;				//1 = Enables debug functions and advanced script logging
+	const bool DebugMode = false;				//1 = Enables debug functions and advanced script logging
 	const bool DebugShowInfo = true;			//1 = Displays additional information on the client in debug mode
 	const bool DebugRCbuild = false;			//1 = Raycast map after server start for desired building type, prints all found buildings to script log	
 	const string RCbuildType = "Land_City_School";					//Building type for map wide raycast
