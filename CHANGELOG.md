@@ -1,6 +1,21 @@
 # 🚀 Hotfix Change Log
 
 ## Version 0.85 v5 – Hotfixes & Features  
+📅 **Published:** 2025-08-14  
+
+### 🧩 Module  
+- *No changes.*
+
+### 🛠 Server Files  
+- **Chernarus EWD:**
+- *No changes.*
+
+- **Mission Templates**
+  - Fixed Mission's Not Deploying #ifdef misplacement.
+
+---
+
+## Version 0.85 v5 – Hotfixes & Features  
 📅 **Published:** 2025-06-10  
 
 ### 🧩 Module  

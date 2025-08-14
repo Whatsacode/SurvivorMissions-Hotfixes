@@ -915,8 +915,6 @@ class FreePigsMission extends SurvivorMissions
 	#endif
 	#endif
 
-	#ifdef ENFUSION_AI_PROJECT
-	#ifdef EXPANSIONMODAI
 	
 	override bool DeployMission()
 	{	//When first player enters the mission zone (primary/secondary)
@@ -945,14 +943,18 @@ class FreePigsMission extends SurvivorMissions
 			GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).Call( this.SpawnObjects );
 			GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).Call( this.SpawnAIs );
 
+			#ifdef ENFUSION_AI_PROJECT
+			#ifdef EXPANSIONMODAI
 			if (SpawnPatrolEnabled)
 			{
 				GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).Call(this.SpawnPatrol);
 			}
-			else
+			if (!SpawnPatrolEnabled)
 			{
 				Print("[SMM] Expansion AI Patrol Turned Off");	
 			}
+			#endif
+			#endif
 
 			return true;		
 		}
@@ -964,6 +966,4 @@ class FreePigsMission extends SurvivorMissions
 		}
 	}
 
-	#endif
-	#endif
 }

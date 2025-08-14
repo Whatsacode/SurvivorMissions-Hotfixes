@@ -1080,13 +1080,9 @@ class CaptureFlagMission extends SurvivorMissions
 		group.SetFormation(CreateFormation(formationType));
 		
 	}
-
 	#endif
-	#endif
-
-	#ifdef ENFUSION_AI_PROJECT
-	#ifdef EXPANSIONMODAI
-				
+	#endif 
+		
 	override bool DeployMission()
 	{	//When first player enters the mission zone (primary/secondary)
 		if ( m_MissionPosition != "0 0 0" )
@@ -1097,17 +1093,22 @@ class CaptureFlagMission extends SurvivorMissions
 				GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).Call( this.SpawnObjects );
 				GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( this.SpawnAIs, 5000, false );
 
-			if (SpawnPatrolEnabled)
-			{
-				Print("[SMM] Expansion AI Patrol Turned On");
-				int BotDlyTime = 600000;
-				// 25min delay before first patrol spawn
-				GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( SpawnPatrol, BotDlyTime, false );
-			}
-			else
-			{
-				Print("[SMM] Expansion AI Patrol Turned Off");	
-			}
+
+				#ifdef ENFUSION_AI_PROJECT
+				#ifdef EXPANSIONMODAI
+				if (SpawnPatrolEnabled)
+				{
+					Print("[SMM] Expansion AI Patrol Turned On");
+					int BotDlyTime = 600000;
+					// 25min delay before first patrol spawn
+					GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( SpawnPatrol, BotDlyTime, false );
+				}
+				if (!SpawnPatrolEnabled)
+				{
+					Print("[SMM] Expansion AI Patrol Turned Off");
+				}
+				#endif
+				#endif
 
 			}
 			return true;
@@ -1119,7 +1120,4 @@ class CaptureFlagMission extends SurvivorMissions
 		}
 	}
 
-	#endif
-	#endif
 }
-
