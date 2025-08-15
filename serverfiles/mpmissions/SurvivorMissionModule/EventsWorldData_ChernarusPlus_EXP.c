@@ -938,6 +938,8 @@ class EventsWorldData extends SurvivorMissions
 		#endif
 
 		//901
+		MissionEvents.Insert("RaceCar Balota_Airfield Southeast");							MissionPositions.Insert("5453 6 2062");
+		MissionEvents.Insert("RaceCar Pulkovo West");										MissionPositions.Insert("4626 320 5698");
 
 		// ***Add new mission events below this line	
 		//example: MissionEvents.Insert("MyNewMissionType Location LocationDir additionalParam");	MissionPositions.Insert("6869.6 350.3 10277.7");
@@ -962,6 +964,7 @@ class EventsWorldData extends SurvivorMissions
 		if ( m_MissionType == "CaptureFlag" )   m_MissionInstance = new CaptureFlagMission();
 		if ( m_MissionType == "Convoy" )   		m_MissionInstance = new ConvoyMission();
 		if ( m_MissionType == "EscortDefend" )  m_MissionInstance = new EscortDefendMission();
+		if ( m_MissionType == "RaceCar" )		m_MissionInstance = new RaceCarMission();
 		// ***Add new mission types below this line when new mission events were defined 
 		//example: if ( ( m_MissionType == "MyNewMissionType" )		m_MissionInstance = new MyNewMission();
 	}
@@ -1199,7 +1202,7 @@ class EventsWorldData extends SurvivorMissions
 	{
 		//List all mission types with no prim. MissionBuilding here!
 		ref array<string> ExcludedTypes = new array<string>;
-		ExcludedTypes.InsertArray( {"Camp","Shrooms","Graveyard","BearHunt","PlaneCrash","Horde","FishBandit","TrainWreck","CaptureFlag","Convoy","EscortDefend"} );	
+		ExcludedTypes.InsertArray( {"Camp","Shrooms","Graveyard","BearHunt","PlaneCrash","Horde","FishBandit","TrainWreck","CaptureFlag","Convoy","EscortDefend","RaceCar"} );	
 		string building;
 		bool BuildingFound;
 				
@@ -1243,7 +1246,7 @@ class EventsWorldData extends SurvivorMissions
 	{
 		//List all mission types with no sec. MissionBuilding here!
 		ref array<string> ExcludedTypes = new array<string>;
-		ExcludedTypes.InsertArray( {"Apartment","Camp","Graveyard","PlaneCrash","Horde","TrainWreck","CaptureFlag","Convoy"} );
+		ExcludedTypes.InsertArray( {"Apartment","Camp","Graveyard","PlaneCrash","Horde","TrainWreck","CaptureFlag","Convoy","RaceCar"} );
 		
 		ref array<vector> ExtendedPosList = new array<vector>;
 		string building;
