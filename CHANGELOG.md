@@ -1,6 +1,21 @@
 # 🚀 Hotfix Change Log
 
-## Version 0.85 v5 – Hotfixes & Features  
+## Version 0.85 v7 – Hotfixes & Features  
+📅 **Published:** 2025-08-14  
+
+### 🧩 Module  
+- *No changes.*
+
+### 🛠 Server Files  
+- **Chernarus EWD:**
+- Added 2 Racecar Missions
+
+- **Mission Templates**
+  - Racecarmission Added
+
+---
+
+## Version 0.85 v6 – Hotfixes & Features  
 📅 **Published:** 2025-08-14  
 
 ### 🧩 Module  
