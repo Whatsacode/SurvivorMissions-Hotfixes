@@ -41,10 +41,10 @@ class RaceCarMission extends SurvivorMissions
 	int m_CurrentWarningIndex = 0;
 	bool m_EntityCheckActive = false; // Track if entity checking is active
 	//////
-	int m_CountdownTime = 60; // Start with 600 seconds (10 minutes)
-	ref array<int> m_WarningTimes = {60, 30, 10, 3, 2}; // Times to show warnings: 10min, 1min, 30sec, 10sec, 3sec, 2sec
+	int m_CountdownTime = 600; // Start with 600 seconds (10 minutes)
+	//ref array<int> m_WarningTimes = {60, 30, 10, 3, 2}; // Times to show warnings: 10min, 1min, 30sec, 10sec, 3sec, 2sec
 
-	//ref array<int> m_WarningTimes = {600, 60, 30, 10, 3, 2}; // Times to show warnings: 10min, 1min, 30sec, 10sec, 3sec, 2sec
+	ref array<int> m_WarningTimes = {600, 60, 30, 10, 3, 2}; // Times to show warnings: 10min, 1min, 30sec, 10sec, 3sec, 2sec
 	
 	
 	// Lap system variables
@@ -211,7 +211,7 @@ class RaceCarMission extends SurvivorMissions
 		// Initialize timer variables
 		m_RaceStarted = false;
 		m_CountdownActive = false;
-		m_CountdownTime = 60; // 10 minutes
+		m_CountdownTime = 600; // 10 minutes
 		m_CurrentWarningIndex = 0;
 		m_EntityCheckActive = false;
 		m_WinningPlayer = null;
@@ -428,7 +428,7 @@ class RaceCarMission extends SurvivorMissions
 		if (m_CountdownActive) return; // Prevent multiple timers
 		
 		m_CountdownActive = true;
-		m_CountdownTime = 60; // 10 minutes
+		m_CountdownTime = 600; // 10 minutes
 		m_CurrentWarningIndex = 0;
 		
 		// Send initial message to all players in zone
