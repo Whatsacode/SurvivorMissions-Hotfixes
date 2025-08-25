@@ -219,7 +219,7 @@ class FishBanditMission extends SurvivorMissions
 	void SpawnRewards()
 	{						
 		//new MissionObject after deleting hunting bag
-		MissionObject = ItemBase.Cast( GetGame().CreateObject("MountainBag_Green", m_MissionPosition ));
+		MissionObject = ItemBase.Cast( GetGame().CreateObject("SeaChest", m_MissionPosition ));
 		MissionObject.SetPosition( m_MissionPosition );
 		
 		//Get random loadout 

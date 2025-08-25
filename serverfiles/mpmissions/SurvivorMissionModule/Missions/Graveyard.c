@@ -495,7 +495,7 @@ class GraveyardMission extends SurvivorMissions
 		}		
 	}
 
-		#ifdef ENFUSION_AI_PROJECT
+	#ifdef ENFUSION_AI_PROJECT
 	#ifdef EXPANSIONMODAI
 
 	// Replicates eAIDynamicPatrol's SetupAI() functionality

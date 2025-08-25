@@ -291,7 +291,7 @@ class FreePigsMission extends SurvivorMissions
 	void SpawnRewards()
 	{						
 		//new MissionObject after deleting hunting bag
-		MissionObject = ItemBase.Cast( GetGame().CreateObject("MountainBag_Green", m_MissionPosition ));
+		MissionObject = ItemBase.Cast( GetGame().CreateObject("SeaChest", m_MissionPosition ));
 		MissionObject.SetPosition( m_MissionPosition );
 		
 		//Get random loadout 
@@ -678,6 +678,20 @@ class FreePigsMission extends SurvivorMissions
 					LastCount = CargoCount;
 				}
 			} 
+		}
+
+		//Check if container gets taken from player
+		if ( MissionSettings.Opt_DenyObjTakeaway )
+		{
+			if ( m_MissionObjects[0] && m_MissionObjects[0].ClassName() == "SeaChest" )
+			{
+				if ( player.GetInventory().HasEntityInInventory( EntityAI.Cast( m_MissionObjects[0] )) && !m_ContainerWasTaken )
+				{
+					m_ContainerWasTaken = true;
+					Print("[SMM] Mission object container was taken by a player ...and will be deleted.");
+					GetGame().ObjectDelete( m_MissionObjects[0] );
+				}
+			}
 		}		
 	}
 		

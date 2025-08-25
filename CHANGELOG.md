@@ -1,4 +1,19 @@
 # 🚀 Hotfix Change Log
+## Version 0.85 v8 – Hotfixes & Features  
+📅 **Published:** 2025-08-25  
+
+### 🧩 Module  
+- *No changes.*
+
+### 🛠 Server Files  
+- *No changes.*
+
+- **Mission Templates**
+  - Updated Camp Mission Turn-In Hunting Bag into a Mountain Bag.
+  - Updated All Reward Containers to be Seachest this will allow all Rewards to Spawn.
+  - Updated All Player Check Functions to Follow Bool Settings to disable players from taking Seachest.
+
+---
 
 ## Version 0.85 v7 – Hotfixes & Features  
 📅 **Published:** 2025-08-14  
