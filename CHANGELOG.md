@@ -9,7 +9,7 @@
 - *No changes.*
 
 - **Mission Templates**
-  - Updated Camp Mission Turn-In Hunting Bag into a Mountain Bag.
+  - Updated BearHunt Mission Turn-In Hunting Bag into a Mountain Bag.
   - Updated All Reward Containers to be Seachest this will allow all Rewards to Spawn.
   - Updated All Player Check Functions to Follow Bool Settings to disable players from taking Seachest.
 
