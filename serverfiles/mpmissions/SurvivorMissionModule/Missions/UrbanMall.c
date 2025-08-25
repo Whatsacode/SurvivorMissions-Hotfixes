@@ -443,7 +443,7 @@ class UrbanMallMission extends SurvivorMissions
 		GetGame().CreateObject( "Lockpick", m_MissionPosition );
 		
 		//new MissionObject after deleting orange bag	
-		MissionObject = ItemBase.Cast( GetGame().CreateObject( "MountainBag_Orange", RewardsPos2 ));
+		MissionObject = ItemBase.Cast( GetGame().CreateObject( "SeaChest", RewardsPos2 ));
 		
 		//Open office door 1st floor 
 		Building PoliceDepartment = Building.Cast( MissionBuilding );
@@ -933,6 +933,20 @@ class UrbanMallMission extends SurvivorMissions
 					LastCount = CargoCount;
 				}
 			} 
+		}
+
+		//Check if container gets taken from player
+		if ( MissionSettings.Opt_DenyObjTakeaway )
+		{
+			if ( m_MissionObjects[0] && m_MissionObjects[0].ClassName() == "SeaChest" )
+			{
+				if ( player.GetInventory().HasEntityInInventory( EntityAI.Cast( m_MissionObjects[0] )) && !m_ContainerWasTaken )
+				{
+					m_ContainerWasTaken = true;
+					Print("[SMM] Mission object container was taken by a player ...and will be deleted.");
+					GetGame().ObjectDelete( m_MissionObjects[0] );
+				}
+			}
 		}				
 	}
 		

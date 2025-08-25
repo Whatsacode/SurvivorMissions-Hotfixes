@@ -346,7 +346,7 @@ class GanjaMission extends SurvivorMissions
 	void SpawnRewards()
 	{		
 		//new MissionObject after deleting protector case
-		MissionObject = ItemBase.Cast( GetGame().CreateObject( "MountainBag_Green", m_MissionPosition ));
+		MissionObject = ItemBase.Cast( GetGame().CreateObject( "SeaChest", m_MissionPosition ));
 		
 		//Get random loadout 
 		int selectedLoadout = Math.RandomIntInclusive( 0, 9);	//!change randomization limit after adding new loadouts!	
@@ -722,7 +722,21 @@ class GanjaMission extends SurvivorMissions
 					}
 				} 		
 			}
-		}		
+		}
+
+		//Check if container gets taken from player
+		if ( MissionSettings.Opt_DenyObjTakeaway )
+		{
+			if ( m_MissionObjects[0] && m_MissionObjects[0].ClassName() == "SeaChest" )
+			{
+				if ( player.GetInventory().HasEntityInInventory( EntityAI.Cast( m_MissionObjects[0] )) && !m_ContainerWasTaken )
+				{
+					m_ContainerWasTaken = true;
+					Print("[SMM] Mission object container was taken by a player ...and will be deleted.");
+					GetGame().ObjectDelete( m_MissionObjects[0] );
+				}
+			}
+		}	
 	}
 		
 	void UpdateBots( float dt )

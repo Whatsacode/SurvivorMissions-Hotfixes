@@ -319,7 +319,7 @@ class PlaneCrashMission extends SurvivorMissions
 		
 		for (int i=0; i < ContainerSpawns.Count(); i++)
 		{	
-			MissionObject = ItemBase.Cast( GetGame().CreateObject( "WoodenCrate", CrashedC130.ModelToWorld( ContainerSpawns.Get(i))));
+			MissionObject = ItemBase.Cast( GetGame().CreateObject( "SeaChest", CrashedC130.ModelToWorld( ContainerSpawns.Get(i))));
 			
 			//Get random loadout 
 			selectedLoadout = Math.RandomIntInclusive(0,9);	//!change randomization limit after adding new loadouts!	
@@ -555,7 +555,19 @@ class PlaneCrashMission extends SurvivorMissions
 	
 	override void PlayerChecks( PlayerBase player )
 	{
-		//nothing to check
+		//Check if container gets taken from player
+		if ( MissionSettings.Opt_DenyObjTakeaway )
+		{
+			if ( m_MissionObjects[0] && m_MissionObjects[0].ClassName() == "SeaChest" )
+			{
+				if ( player.GetInventory().HasEntityInInventory( EntityAI.Cast( m_MissionObjects[0] )) && !m_ContainerWasTaken )
+				{
+					m_ContainerWasTaken = true;
+					Print("[SMM] Mission object container was taken by a player ...and will be deleted.");
+					GetGame().ObjectDelete( m_MissionObjects[0] );
+				}
+			}
+		}
 	}
 		
 	void UpdateBots(float dt)
@@ -563,7 +575,7 @@ class PlaneCrashMission extends SurvivorMissions
 		//no bots involved in this mission		
 	}
 
-		#ifdef ENFUSION_AI_PROJECT
+	#ifdef ENFUSION_AI_PROJECT
 	#ifdef EXPANSIONMODAI
 
 	// Replicates eAIDynamicPatrol's SetupAI() functionality
@@ -792,8 +804,6 @@ class PlaneCrashMission extends SurvivorMissions
 	#endif
 	#endif
 
-
-	
 	override bool DeployMission()
 	{	//When first player enters the mission zone (primary/secondary)
 		if ( m_MissionPosition && m_MissionPosition != "0 0 0" )

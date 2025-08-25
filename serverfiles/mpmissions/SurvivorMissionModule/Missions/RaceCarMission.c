@@ -1234,8 +1234,6 @@ class RaceCarMission extends SurvivorMissions
 	#endif
 	#endif
 
-
-
 	override bool DeployMission()
 	{	//When first player enters the mission zone (primary/secondary)
 		if ( m_MissionPosition && m_MissionPosition != "0 0 0" )

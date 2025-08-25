@@ -248,14 +248,14 @@ class BearHuntMission extends SurvivorMissions
 	
 	void SpawnContainer()
 	{
-		MissionObject =  ItemBase.Cast( GetGame().CreateObject( "HuntingBag", m_MissionPosition ));
+		MissionObject =  ItemBase.Cast( GetGame().CreateObject( "MountainBag_Red", m_MissionPosition ));
 		m_MissionObjects.InsertAt( MissionObject, 0); 		
 	}
 	
 	void SpawnRewards()
 	{
 		//new MissionObject after deleting protector case
-		MissionObject = ItemBase.Cast( GetGame().CreateObject( "MountainBag_Green", m_MissionPosition ));
+		MissionObject = ItemBase.Cast( GetGame().CreateObject( "SeaChest", m_MissionPosition ));
 		
 		//Get random loadout 
 		int selectedLoadout = Math.RandomIntInclusive( 0, 9);	//!change randomization limit after adding new loadouts!	
@@ -498,7 +498,7 @@ class BearHuntMission extends SurvivorMissions
 	{
 		//Set new mission messages
 		m_MissionMessage1 = "Allright survivor, you have found the bear location. Try to safely engage and kill him by aiming at his head or heart. A bear is a strong animal, so it will take some shots to get him down.";
-		m_MissionMessage2 = "Take out your knife and eviscerate him. Bring the pelt and the meat to the\n** "+ m_MissionSecondaryLoc +" School laboratory class room **\n(left wing, top floor) because I want to examine the bear meat. I left a hunting bag on the labor desk.";
+		m_MissionMessage2 = "Take out your knife and eviscerate him. Bring the pelt and the meat to the\n** "+ m_MissionSecondaryLoc +" School laboratory class room **\n(left wing, top floor) because I want to examine the bear meat. I left a red mountain bag on the labor desk.";
 		m_MissionMessage3 = "Put atleast "+ ReqMeatAmount +" bear steaks and the pelt in there. Be carefull, there might be bandits around which could intercepted our little radio talk here. Good luck!";
 		
 		//init Messenger for new messages
@@ -563,7 +563,7 @@ class BearHuntMission extends SurvivorMissions
 		//Check if container gets taken from player
 		if ( MissionSettings.Opt_DenyObjTakeaway && !m_MissionExtended )
 		{
-			if ( m_MissionObjects[0] && m_MissionObjects[0].ClassName() == "HuntingBag" )
+			if ( m_MissionObjects[0] && m_MissionObjects[0].ClassName() == "MountainBag_Red" )
 			{
 				if ( player.GetInventory().HasEntityInInventory( EntityAI.Cast( m_MissionObjects[0] ) ) && !m_ContainerWasTaken )
 				{
@@ -575,7 +575,7 @@ class BearHuntMission extends SurvivorMissions
 		}
 		
 		//Check if container has desired amount of mushrooms collected at primary mission position
-		if ( MissionObject && MissionObject.ClassName() == "HuntingBag" && !m_MissionExtended )
+		if ( MissionObject && MissionObject.ClassName() == "MountainBag_Red" && !m_MissionExtended )
 		{
 			int CargoCount = MissionObject.GetInventory().CountInventory();
 			int LastCount = 0;
@@ -612,6 +612,20 @@ class BearHuntMission extends SurvivorMissions
 					LastCount = CargoCount;
 				}
 			} 
+		}
+
+		//Check if container gets taken from player
+		if ( MissionSettings.Opt_DenyObjTakeaway )
+		{
+			if ( m_MissionObjects[0] && m_MissionObjects[0].ClassName() == "SeaChest" )
+			{
+				if ( player.GetInventory().HasEntityInInventory( EntityAI.Cast( m_MissionObjects[0] )) && !m_ContainerWasTaken )
+				{
+					m_ContainerWasTaken = true;
+					Print("[SMM] Mission object container was taken by a player ...and will be deleted.");
+					GetGame().ObjectDelete( m_MissionObjects[0] );
+				}
+			}
 		}		
 	}
 		

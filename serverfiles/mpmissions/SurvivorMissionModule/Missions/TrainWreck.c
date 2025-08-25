@@ -263,6 +263,7 @@ class TrainWreckMission extends SurvivorMissions
 		}
 
 	}
+
 	void SpawnObjects()
 	{
 		// Spawn crashed Train
@@ -524,7 +525,19 @@ class TrainWreckMission extends SurvivorMissions
 	
 	override void PlayerChecks( PlayerBase player )
 	{
-		//nothing to check
+		//Check if container gets taken from player
+		if ( MissionSettings.Opt_DenyObjTakeaway )
+		{
+			if ( m_MissionObjects[0] && m_MissionObjects[0].ClassName() == "SeaChest" )
+			{
+				if ( player.GetInventory().HasEntityInInventory( EntityAI.Cast( m_MissionObjects[0] )) && !m_ContainerWasTaken )
+				{
+					m_ContainerWasTaken = true;
+					Print("[SMM] Mission object container was taken by a player ...and will be deleted.");
+					GetGame().ObjectDelete( m_MissionObjects[0] );
+				}
+			}
+		}
 	}
 	
 	void SpawnRewards(string Wagon_3_CargoOrientation)
@@ -541,7 +554,7 @@ class TrainWreckMission extends SurvivorMissions
 			
 			//Spawn containers
 			//Note: We are using "RewardCount" as a counter for containers, as the count of the players in the mission zone
-			MissionObject = ItemBase.Cast( GetGame().CreateObject( "WoodenCrate", CrashedTrainWagon_3.ModelToWorld( CargoSpawns.Get(RewardCount))));
+			MissionObject = ItemBase.Cast( GetGame().CreateObject( "SeaChest", CrashedTrainWagon_3.ModelToWorld( CargoSpawns.Get(RewardCount))));
 			MissionObject.SetOrientation( Wagon_3_CargoOrientation.ToVector() );
 			MissionObject.PlaceOnSurface();
 			
