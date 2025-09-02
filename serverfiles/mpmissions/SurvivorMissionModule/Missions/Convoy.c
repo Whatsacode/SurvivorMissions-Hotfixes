@@ -84,19 +84,19 @@ class ConvoyMission extends SurvivorMissions
 	
 		//Set mission messages
 
-		if(SpawnPatrolEnabled)
+		if (SpawnPatrolEnabled)
 		{
-			m_MissionMessage1 = "A Convoy has been overrun by raiders "+ m_MissionLocationDir +" of "+ m_MissionLocation + ". The NBC hazmat crews are in need of assistance.";
-			m_MissionMessage2 = "They just finished burning the dead in the tire-pile left by the raiders but now they see more waves of incoming.";
-			m_MissionMessage3 = "Help them fight off the infected. This will give them time to find what the survivors dropped when they were attacked.";
+			m_MissionMessage1 = "A convoy has been overrun by raiders " + m_MissionLocationDir + " of " + m_MissionLocation + ". The NBC hazmat crews are in urgent need of assistance.";
+			m_MissionMessage2 = "They just finished burning the dead in the tire pile left by the raiders, but now they’ve spotted more waves incoming.";
+			m_MissionMessage3 = "Help them fight off the infected. This will give them time to recover what the survivors dropped during the attack.";
 		}
 		else
 		{
-			m_MissionMessage1 = "A Convoy has been attacked by raiders "+ m_MissionLocationDir +" of "+ m_MissionLocation + ".";
-			m_MissionMessage2 = "It seems the area was not safe to travel through. They were attacked, Please go to the Area and Investigate.";
-			m_MissionMessage3 = "The Lone Survivor who came back said he was repairing the vehicle when he was attacked. He said he dropped a USB with info on the Infected somewhere in the area.";
-			m_MissionMessage3 = "He said Be careful, you may need to clear the Infected in the area before you can find it.";		
+			m_MissionMessage1 = "A convoy was attacked by raiders " + m_MissionLocationDir + " of " + m_MissionLocation + ".";
+			m_MissionMessage2 = "It seems the area wasn’t safe to travel through. They were ambushed — please head there and investigate.";
+			m_MissionMessage3 = "The lone survivor who returned said he was repairing the vehicle when the attack happened. He dropped a USB drive containing information on the infected somewhere in the area. Be careful — you may need to clear the infected before you can find it.";
 		}
+
 	
         //Wrecked vehicles Spawn Locations
 		WreckVector.Insert("5 .70 -11.2");		WreckVector.Insert("-.05 .7 -10.2");	

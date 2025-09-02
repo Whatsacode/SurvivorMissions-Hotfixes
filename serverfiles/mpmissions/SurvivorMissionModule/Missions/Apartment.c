@@ -62,10 +62,11 @@ class ApartmentMission extends SurvivorMissions
 		TStringArray SurvivorNames = {"Yuri", "Michail", "Boris", "Valeri", "Anatoli", "Ivan", "Alexej", "Dimitrij", "Sergej", "Nikolai" };
 		SurvivorName = SurvivorNames.GetRandomElement();
 						
-		//Mission messages 
-        m_MissionMessage1 = SurvivorName +" was one of my best students. I used to talk to him on the radio, but now I have lost contact with him.";
-        m_MissionMessage2 = "He told me that he has hidden a sea chest with good equipment somewhere in the apartments. A few days ago he barricaded the whole building against the infected.";
-        m_MissionMessage3 = "He used to live in one of the apartments\n** "+ m_MissionLocationDir +" of "+ m_MissionLocation+" **\nPlease check if "+SurvivorName+" is still alive. If not, then take his stuff to help you survive.";
+		// Mission messages
+		m_MissionMessage1 = SurvivorName + " was one of my best students. I used to talk to him over the radio, but I've since lost contact.";
+		m_MissionMessage2 = "He once told me that he had hidden a sea chest with valuable equipment somewhere in the apartments. A few days ago, he barricaded the entire building against the infected.";
+		m_MissionMessage3 = "He lived in one of the apartments\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nPlease check if " + SurvivorName + " is still alive. If not, take his supplies to help you survive.";
+
 				
 		//Mission object spawnpoints in mission building	
 		Spawnpoints.Insert("8.1257 2.7203 3.1963");

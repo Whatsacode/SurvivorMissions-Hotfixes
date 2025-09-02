@@ -75,12 +75,11 @@ class CityMallMission extends SurvivorMissions
 		//Mission person names
 		TStringArray SurvivorNames = {"Tamarova", "Lorzinski", "Blosmanova", "Gabarin", "Sloskova", "Belzin", "Homyuk", "Trademzyuk", "Jankarova"};
 		SurvivorName = SurvivorNames.GetRandomElement();
-		
-		//Set mission messages for primary mission
-		m_MissionMessage1 = "Ms. "+ SurvivorName +", a ground school teacher, told me that she has brought some children of her class in safety from their infected families. I promised that i will help her for getting food and other medical supplies for the kids.";
-		m_MissionMessage2 = "Yesterday I found out that the Supermarket in\n** "+ m_MissionLocation +" **\nis barricaded and probably has some food inside. But there were too many infected around, i wasn't able to check the Supermarket.";
-		m_MissionMessage3 = "She immediately needs following things from the market:\n- "+ ReqFoodAmount +" cans of food and..\n- "+ ReqMedAmount +" packets of antibiotics\nPlease help me to support Ms. "+ SurvivorName +" with those life essentials for the kids.";
-		
+		// Set mission messages for primary mission
+		m_MissionMessage1 = "Ms. " + SurvivorName + ", a grade school teacher, told me that she brought some of her students to safety from their infected families. I promised her that I would help get food and medical supplies for the kids.";
+		m_MissionMessage2 = "Yesterday, I found out that the supermarket in\n** " + m_MissionLocation + " **\nwas barricaded and probably still has some food inside. But there were too many infected around, so I wasn't able to check the supermarket.";
+		m_MissionMessage3 = "She urgently needs the following items from the market:\n- " + ReqFoodAmount + " cans of food\n- " + ReqMedAmount + " packets of antibiotics\nPlease help me support Ms. " + SurvivorName + " with these essential supplies for the children.";
+
 		//Spawnpoints for antibiotics in store (cash desk)
 		MedSpawns.Insert("-5.392 -0.686 1.087");
 		MedSpawns.Insert("-5.836 -0.686 1.087");
