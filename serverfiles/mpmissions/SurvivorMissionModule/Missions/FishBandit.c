@@ -80,10 +80,10 @@ class FishBanditMission extends SurvivorMissions
 		SurvivorName = SurvivorNames.GetRandomElement();
 		
 		//Set mission messages for primary mission
-		m_MissionMessage1 = "A survivor recently reported to me that a group of Bandits attacked my friend "+ SurvivorName +" and killed 2 other survivor's. They went to the wrong location trying to fish "+ m_MissionLocation +".";
-		m_MissionMessage2 = "I still can't believe it. "+ SurvivorName +" was one of the best Fishermen left alive here on the Island. Once a week he brought fresh fish to the hidden camp to feed a group of survivors. He was the groups only hope in these dark times.";
-		m_MissionMessage3 = "His camp was near the shore \n** "+ m_MissionLocationDir +" of "+ m_MissionLocation +" **\nI want you to go investigate the area. Please be careful! There is something in his tent I need you to get.";
-		
+		m_MissionMessage1 = "A survivor recently told me that a group of bandits attacked my friend " + SurvivorName + " and killed two other survivors. They went to the wrong location while trying to fish near " + m_MissionLocation + ".";
+		m_MissionMessage2 = "I still can't believe it. " + SurvivorName + " was one of the best fishermen left on the island. Once a week he brought fresh fish to the hidden camp to feed a group of survivors. He was the group's only hope in these dark times.";
+		m_MissionMessage3 = "His camp was near the shore\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nI need you to investigate the area. Please be careful! There is something in his tent I need you to recover.";
+
 		//Spawnpoint for MissionObject for secondary mission
 		Spawnpoints.Insert("-18.40 2.19 18.57");
 		

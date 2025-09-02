@@ -74,10 +74,10 @@ class FreePigsMission extends SurvivorMissions
 		SurvivorName = SurvivorNames.GetRandomElement();
 		
 		//Set mission messages for primary mission
-		m_MissionMessage1 = SurvivorName +", a farmer from "+ m_MissionLocation +", died 2 days ago after a attack from bandits. He was protecting his animls from infected and scavengers and was farming pigs to deliver meat to the young and old survivors hideout somewhere in the forests.";
-		m_MissionMessage2 = "He was well known under survivors for his perfection in making good bacon and spiced meat for barbecue. His pigs are still in the shed and I am afraid they could starve to death, if they are not already dead by infected or robbed by bandits.";
-		m_MissionMessage3 = "Go to "+ SurvivorName +"'s farm located \n** "+ m_MissionLocationDir +" of "+ m_MissionLocation +" **\nand free all the pigs from their cage to give them a chance to survive. You need at least a knife.";
-		
+		m_MissionMessage1 = SurvivorName + ", a farmer from " + m_MissionLocation + ", died two days ago after an attack by bandits. He was protecting his animals from infected and scavengers, and had been raising pigs to provide meat for the young and old survivors hiding out in the forests.";
+		m_MissionMessage2 = "He was well known among survivors for his skill in making bacon and spiced meat for barbecues. His pigs are still in the shed, and I fear they may starve to death — if they haven't already been killed by the infected or stolen by bandits.";
+		m_MissionMessage3 = "Go to " + SurvivorName + "'s farm located\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nand free the pigs from their pen to give them a chance to survive. You will need at least a knife.";
+
 		//Spawnpoints for caged pigs in farm (view from inside building at door position)
 		//right cage row
 		CagedPigSpawns.Insert("0.92 -3.01 3.10"); 

@@ -62,10 +62,10 @@ class GraveyardMission extends SurvivorMissions
 		SurvivorName = SurvivorNames.GetRandomElement();
 		
 		//Set mission messages
-		m_MissionMessage1 = "I just received that the commander of the Chernarus Defense Troups General Major "+ SurvivorName +" hasn't survived his infection.";
-		m_MissionMessage2 = "He was one of the Soviet Army officers in Chernarus. "+ SurvivorName +" told me that he lost over 2000 men here and will never give up the fight against the infection as long as he lives. He got infected while securing residents of "+ m_MissionLocation +".";
-		m_MissionMessage3 = "He hided some equipment at the graveyard of\n** "+ m_MissionLocation +", "+ m_MissionLocationDir +" near the church **\nI think someone should get his lagcy. He burried it anywhere near the graves. You need atleast a shovel. Take care!";
-		
+		m_MissionMessage1 = "I just received word that the commander of the Chernarus Defense Troops, General Major " + SurvivorName + ", has not survived his infection.";
+		m_MissionMessage2 = "He was once a Soviet Army officer in Chernarus. " + SurvivorName + " told me that he lost over 2,000 men here and would never give up the fight against the infection as long as he lived. He became infected while securing residents of " + m_MissionLocation + ".";
+		m_MissionMessage3 = "He hid some equipment at the graveyard of\n** " + m_MissionLocation + ", " + m_MissionLocationDir + " near the church **\nI think someone should recover his legacy. He buried it somewhere near the graves. You will need at least a shovel. Take care!";
+
 		//Infected spawnpoints
 		InfectedSpawns.Insert("-10.5186 0 25.0269");
 		InfectedSpawns.Insert("24.9775 0 -10.4146");

@@ -82,10 +82,10 @@ class UrbanMallMission extends SurvivorMissions
 		SurvivorName = SurvivorNames.GetRandomElement();
 		
 		//Set mission messages for primary mission
-		m_MissionMessage1 = "Ms. "+ SurvivorName +", a ground school teacher, told me that she has brought some children of her class in safety from their infected families. I promised that i will help her for getting food and other medical supplies for the kids.";
-		m_MissionMessage2 = "Yesterday I found out that the city mall of\n** "+ m_MissionLocation +" **\nis barricaded and probably has some food inside. But there were too many infected around, i wasn't able to check the Supermarket.";
-		m_MissionMessage3 = "She immediately needs following things:\n- "+ ReqFoodAmount +" cans of food\n- "+ ReqMedAmount +" packets of antibiotics\nPlease help me to support Ms. "+ SurvivorName +" with these life essentials for the kids. Be careful!";
-		
+		m_MissionMessage1 = "Ms. " + SurvivorName + ", a grade school teacher, told me that she has brought some of her students to safety from their infected families. I promised her that I would help get food and medical supplies for the children.";
+		m_MissionMessage2 = "Yesterday, I discovered that the city mall in\n** " + m_MissionLocation + " **\nis barricaded and likely has some food inside. But there were too many infected around, so I wasn’t able to check the supermarket.";
+		m_MissionMessage3 = "She urgently needs the following:\n- " + ReqFoodAmount + " cans of food\n- " + ReqMedAmount + " packets of antibiotics\nPlease help me support Ms. " + SurvivorName + " with these essential supplies for the children. Be careful!";
+
 		//Spawnpoints for antibiotics in store (cash desk)
 		MedSpawns.Insert("-5.392 -0.686 1.087" - Offset );
 		MedSpawns.Insert("-5.836 -0.686 1.087" - Offset );
