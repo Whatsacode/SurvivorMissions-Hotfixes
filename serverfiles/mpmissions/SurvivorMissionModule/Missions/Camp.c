@@ -407,7 +407,7 @@ class CampMission extends SurvivorMissions
 				weapon.GetInventory().CreateAttachment("AK_RailHndgrd");
 				weapon.GetInventory().CreateAttachment("AK74_WoodBttstck");	
 				weapon.GetInventory().CreateAttachment("KashtanOptic");
-				weapon.GetInventory().CreateAttachment("'AK_Suppressor");			
+				weapon.GetInventory().CreateAttachment("AK_Suppressor");			
 			MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
 			MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
 			MissionObject.GetInventory().CreateInInventory("Headtorch_Grey");
@@ -488,7 +488,7 @@ class CampMission extends SurvivorMissions
 		
 		//Cluttercutter fireplace
 		cc_fireplace = GetGame().CreateObject( "ClutterCutterFireplace" , MissionCampfire.GetPosition() );
-		cc_fireplace.SetOrientation( CampfireOrientation );
+		cc_fireplace.SetOrientation( MissionCampfire.GetOrientation() );
 		GetGame().RemoteObjectCreate( cc_fireplace );
 		m_MissionObjects.Insert( cc_fireplace );
 							

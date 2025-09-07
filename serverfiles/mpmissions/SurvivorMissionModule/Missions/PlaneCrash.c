@@ -451,7 +451,7 @@ class PlaneCrashMission extends SurvivorMissions
 				weapon.GetInventory().CreateAttachment("AK_RailHndgrd");
 				weapon.GetInventory().CreateAttachment("AK74_WoodBttstck");	
 				weapon.GetInventory().CreateAttachment("KashtanOptic");
-				weapon.GetInventory().CreateAttachment("'AK_Suppressor");			
+				weapon.GetInventory().CreateAttachment("AK_Suppressor");			
 			MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
 			MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
 			MissionObject.GetInventory().CreateInInventory("Headtorch_Grey");
