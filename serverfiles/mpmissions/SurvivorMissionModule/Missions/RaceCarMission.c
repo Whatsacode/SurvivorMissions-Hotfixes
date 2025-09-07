@@ -76,9 +76,9 @@ class RaceCarMission extends SurvivorMissions
 		SurvivorName = SurvivorNames.GetRandomElement();
 		
 		//Set mission messages
-        m_MissionMessage1 = "My friend "+ SurvivorName +" is a car enthusiast, he misses the thrill of watching a race.\nHe has a challenge for all who dare!";
-		m_MissionMessage2 = ""+ m_MissionLocationDir +" of "+ m_MissionLocation + "\nRace your car through " + m_TotalLaps + " laps, hitting all checkpoints each lap.\nThe first one to complete " + m_TotalLaps + " laps wins!";		
-		m_MissionMessage3 = "If you dont have a car, you can take one from the starting point.\nComplete the full circuit " + m_TotalLaps + " times to win.\nGood luck!";
+		m_MissionMessage1 = "My friend " + SurvivorName + " is a car enthusiast. He misses the thrill of watching a race,\nand now he has a challenge for all who dare!";
+		m_MissionMessage2 = m_MissionLocationDir + " of " + m_MissionLocation + "\nRace your car through " + m_TotalLaps + " laps, making sure to hit every checkpoint each lap.\nThe first one to complete " + m_TotalLaps + " laps wins!";
+		m_MissionMessage3 = "If you don't have a car, you can take one from the starting point.\nComplete the full circuit " + m_TotalLaps + " times to win.\nGood luck!";
 
 		//Infected types
 		//Male												//Female

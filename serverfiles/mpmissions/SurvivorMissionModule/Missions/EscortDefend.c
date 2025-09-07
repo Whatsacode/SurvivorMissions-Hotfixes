@@ -115,10 +115,10 @@ class EscortDefendMission extends SurvivorMissions
 		#endif
 	
 		//Set mission messages
-        m_MissionMessage1 = SurvivorName +", once a high ranking officer within the Chernarus Police Dept. Has managed to survive for quite some time after the accident.";
-        m_MissionMessage2 = "He believes that there may be some left over supplies that himself and you could possibly use. He is looking for a escort though.";
-        m_MissionMessage3 = "If you are up to the task, he is holding out in a house \n** "+ m_MissionLocationDir +" "+ m_MissionLocation +" **\n";
-		
+		m_MissionMessage1 = SurvivorName + ", once a high-ranking officer in the Chernarus Police Department, has managed to survive for quite some time since the accident.";
+		m_MissionMessage2 = "He believes there may still be some leftover supplies that both he and you could use. However, he's looking for an escort.";
+		m_MissionMessage3 = "If you're up to the task, he's holding out in a house\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\n";
+
 
 		//Infected types for secondary mission position
 		//Male												//Female

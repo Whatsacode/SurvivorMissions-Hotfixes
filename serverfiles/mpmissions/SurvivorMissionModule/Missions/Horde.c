@@ -57,10 +57,10 @@ class HordeMission extends SurvivorMissions
 		m_MissionInformant = "Dr. Legasov";
 		
 		//Set mission messages
-		m_MissionMessage1 = "I got an emergency call from a heli pilot who crashed somewhere in the forests. He is injured but still alive. He was afraid that the infected will find him soon.";
-		m_MissionMessage2 = "He made it to a house in the village near the crash site. He is well equiped and he think he will stay in the house over the night where he treats his open wounds.";
-		m_MissionMessage3 = "The house is at the ** "+ m_MissionLocationDir +" side of "+ m_MissionLocation +" **\nBe careful there may be infected and other survivors who want his equipment!";
-		
+		m_MissionMessage1 = "I got an emergency call from a helicopter pilot who crashed somewhere in the forest. He is injured but still alive, though he fears the infected will find him soon.";
+		m_MissionMessage2 = "He managed to reach a house in the village near the crash site. He is well equipped and thinks he can stay there overnight while treating his wounds.";
+		m_MissionMessage3 = "The house is at the ** " + m_MissionLocationDir + " side of " + m_MissionLocation + " **\nBe careful — there may be infected and other survivors who want his equipment!";
+
 
 		//Infected types
 		//Male												//Female

@@ -72,10 +72,10 @@ class TrainWreckMission extends SurvivorMissions
 		m_MissionInformant = "United Nations Command";
 	
 		//Set mission messages
-		m_MissionMessage1 = "The UN has dispatched soldiers to secure specific high profile locations around Chernarus in an effort to try to restore order in South Zagoria.\nBut our nightmare has turned into reality.\nThe train has never arrived to any of it's destinations.";
-		m_MissionMessage2 = "We received a report that there was an explosion on the rail tracks "+ m_MissionLocationDir +" to " + m_MissionLocation + ".\nWe can only assume that the rails were sabotaged in order to de-rail the train.";
-		m_MissionMessage3 = "The train was carrying unknown cargo, probably most of it got stolen already.\nWe need to know if anyone survived the incident. Be careful!";
-		
+		m_MissionMessage1 = "The UN dispatched soldiers to secure key high-profile locations around Chernarus in an effort to restore order in South Zagoria.\nBut our worst nightmare has become reality.\nThe train never arrived at any of its destinations.";
+		m_MissionMessage2 = "We received a report of an explosion on the rail tracks " + m_MissionLocationDir + " to " + m_MissionLocation + ".\nWe can only assume the rails were sabotaged to derail the train.";
+		m_MissionMessage3 = "The train was carrying unknown cargo, most of which has likely already been stolen.\nWe need to find out if anyone survived the incident. Be careful!";
+
 		//Train Engine fire spawns 
 		FireSpawns.Insert("0 0 0");				//engine fire
 		FireSpawns.Insert("0 -2.18 -2");		//engine fire

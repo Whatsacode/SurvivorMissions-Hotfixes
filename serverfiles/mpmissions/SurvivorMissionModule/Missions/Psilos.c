@@ -72,10 +72,10 @@ class PsilosMission extends SurvivorMissions
 		SurvivorExtName = SurvivorExtNames.GetRandomElement();
 		
 		//Set mission messages for primary mission
-		m_MissionMessage1 = SurvivorName +", a survivor i met a few days ago told me that there are some places around here with numerous occurrencies of a special mushroom. It's classification name is 'Psilocybe semilanceata'.";
-		m_MissionMessage2 = "At the moment i am experimenting with the psychoactive ingredient Psilocybin on infected wild animals. The animals show interesting behaviors after 30 minutes of the oral intake. I can't say much about it yet, but for my experiments I need more mushrooms.";
-		m_MissionMessage3 = SurvivorName +" said that he found some of those anywhere\n** "+ m_MissionLocationDir +" of "+ m_MissionLocation +" **\nI need "+ ReqShroomsCount +" more pieces of it. The mushrooms are very small. I recommend using a mushroom encyclopedia for possible occurrencies!";
-		
+		m_MissionMessage1 = SurvivorName + ", a survivor I met a few days ago, told me that there are places around here with numerous occurrences of a special mushroom. Its classification name is 'Psilocybe semilanceata'.";
+		m_MissionMessage2 = "At the moment, I am experimenting with the psychoactive ingredient psilocybin on infected wild animals. The animals begin to show unusual behavior about 30 minutes after oral intake. I can't say much yet, but for my experiments I need more mushrooms.";
+		m_MissionMessage3 = SurvivorName + " said he found some of them\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nI need " + ReqShroomsCount + " more pieces. The mushrooms are very small, so I recommend using a mushroom guide to help identify possible occurrences!";
+
 		//Spawnpoints for MissionObject for secondary mission
 		Spawnpoints.Insert("-8.2598 -5.3138 -3.3914");
 		Spawnpoints.Insert("-9.3223 -5.3234 1.1267");

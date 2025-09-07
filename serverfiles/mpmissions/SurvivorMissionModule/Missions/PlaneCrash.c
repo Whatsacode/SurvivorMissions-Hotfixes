@@ -63,10 +63,10 @@ class PlaneCrashMission extends SurvivorMissions
 		SurvivorName = "Gerry Lane";
 		
 		//Set mission messages
-        m_MissionMessage1 = "I just received a emergency call from a military pilot. One crew member was infected and suddenly attacked others. He said this flight has the highest international priority.";
-        m_MissionMessage2 = "Also onboard is Mr. "+ SurvivorName +", he is an UN agent and it seems he has some information about the cure for this pandemic disease. They were at flight level 300 on their way to Wales.";
-        m_MissionMessage3 = "The pilot said he was bitten and tried to emergency land somewhere in the fields\n** "+ m_MissionLocationDir +" of "+ m_MissionLocation +" **\nFind out if they made it. They have some equipment on board!";		
-		
+		m_MissionMessage1 = "I just received an emergency call from a military pilot. One crew member was infected and suddenly attacked the others. He said this flight has the highest international priority.";
+		m_MissionMessage2 = "Also onboard is Mr. " + SurvivorName + ", a UN agent who appears to have information about a possible cure for this pandemic. They were at flight level 300 on their way to Wales.";
+		m_MissionMessage3 = "The pilot said he was bitten and attempted an emergency landing somewhere in the fields\n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nFind out if they made it. They should have valuable equipment on board!";
+
 		//Engine fire spawns 
 		FireSpawns.Insert("5.15 -2.18 -4.63");		//engine
 		FireSpawns.Insert("5.15 -2.18 -5");			//engine
