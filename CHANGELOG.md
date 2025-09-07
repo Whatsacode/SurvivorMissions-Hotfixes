@@ -11,6 +11,8 @@
 - **Mission Templates**
   - Fixed Typo In All Mission Rewards - "'AK_Suppressor" to "AK_Suppressor"
   - Fixed Typo In Camp Mission Script
+  - Updated English Grammar for Missions
+  - 👤 Credit: **https://github.com/zarmstrong**
 
 ---
 
