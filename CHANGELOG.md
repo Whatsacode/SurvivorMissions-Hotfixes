@@ -1,4 +1,20 @@
 # 🚀 Hotfix Change Log
+## Version 0.85 v9 – Hotfixes & Features  
+📅 **Published:** 2025-09-07  
+
+### 🧩 Module  
+- *No changes.*
+
+### 🛠 Server Files  
+- *No changes.*
+
+- **Mission Templates**
+  - Fixed Typo In All Mission Rewards - "'AK_Suppressor" to "AK_Suppressor"
+  - Fixed Typo In Camp Mission Script
+
+---
+
+
 ## Version 0.85 v8 – Hotfixes & Features  
 📅 **Published:** 2025-08-25  
 
