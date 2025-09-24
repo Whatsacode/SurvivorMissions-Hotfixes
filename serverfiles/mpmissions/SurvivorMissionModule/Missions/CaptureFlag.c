@@ -85,7 +85,7 @@ class CaptureFlagMission extends SurvivorMissions
 		//Set mission messages
 		m_MissionMessage1 = "Yesterday, one of our defense positions was taken over by the Bohemian Bandits. The firefight between the bandits and a few survivors drew in a large number of infected.";
 		m_MissionMessage2 = "Locate the defense position and capture the base flag for us. It will take at least " + (CaptureTime / 60).ToString() + " minutes to lower the bandits' flag and raise our own.";
-		m_MissionMessage3 = "The defense position is located on the ** " + m_MissionLocationDir + " side of " + m_MissionLocation + " **\nBe careful — there are many infected, and the bandi_
+		m_MissionMessage3 = "The defense position is located on the ** " + m_MissionLocationDir + " side of " + m_MissionLocation + " **\nBe careful — there are alot of infected and the bandits might be still around there!";
 
 		//Rewards spawns
 		Spawnpoints.Insert("-0.422 0.453 0");	//table 1
@@ -1131,5 +1131,6 @@ class CaptureFlagMission extends SurvivorMissions
 			return false;
 		}
 	}
+
 
 }
