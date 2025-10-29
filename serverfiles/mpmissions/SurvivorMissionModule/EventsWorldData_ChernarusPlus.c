@@ -976,13 +976,13 @@ class EventsWorldData extends SurvivorMissions
 		
 		if ( MBuilding == "Land_City_Hospital")
 		{
-			if ( MLocation == "Chernogorsk") 				BuildingPosList.Insert("6474.1 17.1 2719.6");
-			else if ( MLocation == "Elektrozavodsk")		BuildingPosList.Insert("10283.9 20.2 2285.2");
-			else if ( MLocation == "Berezino") 				BuildingPosList.Insert("11928.2 61.7 9070.4");
-			else if ( MLocation == "Novodmitrovsk") 		BuildingPosList.Insert("11413.8 85.9 14597.9");
-			else if ( MLocation == "Pavlovo") 				BuildingPosList.Insert("2165.0 99.0 3357.7");
-			else if ( MLocation == "Severograd") 			BuildingPosList.Insert("8017.3 121.5 12752.4");
-			else return false;			//No match by location						
+		    if ( MLocation == "Chernogorsk")             BuildingPosList.Insert("6474.1 17.1 2718.6");
+		    else if ( MLocation == "Elektrozavodsk")        BuildingPosList.Insert("10283.9 20.2 2285.2");
+		    else if ( MLocation == "Berezino")             BuildingPosList.Insert("11928.2 61.7 9070.4");
+		    else if ( MLocation == "Novodmitrovsk")         BuildingPosList.Insert("11414.6 85.9 14597.2");
+		    else if ( MLocation == "Pavlovo")             BuildingPosList.Insert("2165.0 99.0 3357.7");
+		    else if ( MLocation == "Severograd")             BuildingPosList.Insert("8017.3 121.5 12752.4");
+		    else return false;                            //No match by location                        
 		}
 		else if ( MBuilding == "Land_FuelStation_Build")
 		{
@@ -1035,27 +1035,27 @@ class EventsWorldData extends SurvivorMissions
 		}
 		else if ( MBuilding == "Land_Misc_TrailRoof_Small")
 		{
-			if ( MLocation == "Black_Lake")					BuildingPosList.Insert("13346.5 71.2 12095.4");
-			else if ( MLocation == "Devils_Castle")			BuildingPosList.Insert("6930.7 378.2 11608.1");
-			else if ( MLocation == "Dubrovka")				BuildingPosList.Insert("10437.0 116.4 9845.2");
-			else if ( MLocation == "Gorka")					BuildingPosList.Insert("9334.4 321.9 8839.1");
-			else if ( MLocation == "Grishino")				BuildingPosList.Insert("6071.5 268.1 10481.7");
-			else if ( MLocation == "Gvozdno")				BuildingPosList.Insert("8303.3 150.5 12100,8");
-			else if ( MLocation == "Kozlovka")				BuildingPosList.Insert("4278.5 203.8 4459.1");
-			else if ( MLocation == "Kotka_Mountain")		BuildingPosList.Insert("5695.5 328.6 6892.9");
-			else if ( MLocation == "Nizhnoye")				BuildingPosList.Insert("12897.0 7.2 8338.3");
-			else if ( MLocation == "Nagornoe")				BuildingPosList.Insert("9394.3 232.5 14551.7");
-			else if ( MLocation == "Rog_Castle")			BuildingPosList.Insert("11235.3 235.3 4618.8");
-			else if ( MLocation == "Shakhovka")				BuildingPosList.Insert("9573.3 213.9 6791.0");
-			else if ( MLocation == "Stary_Sobor")			BuildingPosList.Insert("6203.4 333.1 8019.2");
-			else if ( MLocation == "Olha_Mountain")			BuildingPosList.Insert("12970.7 214.2 12763.9");
-			else if ( MLocation == "Ostry_Mountain")		BuildingPosList.Insert("10818.7 336.4 12864.2");
-			else if ( MLocation == "Veresnik_Mountain")		BuildingPosList.Insert("4436.5 340.3 8072.2");
-			else if ( MLocation == "Vavilovo")				BuildingPosList.Insert("2061.6 252.9 11340.3");
-			else if ( MLocation == "Zub_Castle")			BuildingPosList.Insert("6911.9 311.6 5589.6");
-			else if ( MLocation == "Prud")					BuildingPosList.Insert("6571.8 360.7 9045.1");
-			else return false;			//No match by location
-		}		
+		    if ( MLocation == "Black_Lake")                BuildingPosList.Insert("13346.5 71.2 12095.4");
+		    else if ( MLocation == "Devils_Castle")            BuildingPosList.Insert("6930.7 378.2 11608.1");
+		    else if ( MLocation == "Dubrovka")            BuildingPosList.Insert("10437.0 116.4 9845.2");
+		    else if ( MLocation == "Gorka")                BuildingPosList.Insert("9334.4 321.9 8839.1");
+		    else if ( MLocation == "Grishino")            BuildingPosList.Insert("6071.5 268.1 10481.7");
+		    else if ( MLocation == "Gvozdno")            BuildingPosList.Insert("8303.3 150.5 12100.8");
+		    else if ( MLocation == "Kozlovka")            BuildingPosList.Insert("4278.5 203.8 4459.1");
+		    else if ( MLocation == "Kotka_Mountain")        BuildingPosList.Insert("5695.5 328.6 6892.9");
+		    else if ( MLocation == "Nizhnoye")            BuildingPosList.Insert("12895.2 8.7 8342.7");
+		    else if ( MLocation == "Nagornoe")            BuildingPosList.Insert("9394.3 232.5 14551.7");
+		    else if ( MLocation == "Rog_Castle")            BuildingPosList.Insert("11235.3 235.3 4618.8");
+		    else if ( MLocation == "Shakhovka")            BuildingPosList.Insert("9573.3 213.9 6791.0");
+		    else if ( MLocation == "Stary_Sobor")            BuildingPosList.Insert("6203.4 333.1 8019.2");
+		    else if ( MLocation == "Olha_Mountain")            BuildingPosList.Insert("12970.7 214.2 12763.9");
+		    else if ( MLocation == "Ostry_Mountain")        BuildingPosList.Insert("10818.7 336.4 12864.2");
+		    else if ( MLocation == "Veresnik_Mountain")        BuildingPosList.Insert("4436.5 340.3 8072.2");
+		    else if ( MLocation == "Vavilovo")            BuildingPosList.Insert("2061.6 252.9 11340.3");
+		    else if ( MLocation == "Zub_Castle")            BuildingPosList.Insert("6911.9 311.6 5589.6");
+		    else if ( MLocation == "Prud")                BuildingPosList.Insert("6571.8 360.7 9045.1");
+		    else return false;                            //No match by location
+		}	
 		else if ( MBuilding == "Land_City_School")
 		{
 			if ( MLocation == "Berezino")					BuildingPosList.Insert("12168.3 17.1 9757.0");
@@ -1463,4 +1463,5 @@ class EventsWorldData extends SurvivorMissions
 		}
 		Print("[SEM] DEBUG MODE: Map wide raycast END");		
 	}
+
 }
