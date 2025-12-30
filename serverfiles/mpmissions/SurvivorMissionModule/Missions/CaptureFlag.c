@@ -314,13 +314,13 @@ class CaptureFlagMission extends SurvivorMissions
 		for ( int i=0; i < BuildingSpawns.Count(); i++ )
 		{
 			Param3<string,vector,vector> BuildingDef = BuildingSpawns.Get(i);
-			string BuildingType = BuildingDef.param1;
+			string SM_BuildingType = BuildingDef.param1;
 			vector BuildingPos = FlagBase.ModelToWorld( BuildingDef.param2 );
 			vector BuildingOri = BuildingDef.param3;
 			vector BuildingDir = FlagBase.GetDirection();
 			
 			BuildingPos[1] = GetGame().SurfaceY( BuildingPos[0], BuildingPos[2] );
-			Object HQextra = GetGame().CreateObject( BuildingType, BuildingPos );
+			Object HQextra = GetGame().CreateObject( SM_BuildingType, BuildingPos );
 			HQextra.SetDirection( BuildingDir );
 			HQextra.SetOrientation( HQextra.GetOrientation() + BuildingOri );
 			HQextra.PlaceOnSurface();
@@ -1134,3 +1134,4 @@ class CaptureFlagMission extends SurvivorMissions
 
 
 }
+
