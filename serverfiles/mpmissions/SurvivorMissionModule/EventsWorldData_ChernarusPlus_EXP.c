@@ -1339,12 +1339,12 @@ static bool GetBuildingsAtLoc( string MBuilding, string MLocation, out array<vec
 		for ( int i=0; i < BuildingSpawns.Count(); i++ )
 		{
 			Param3<string,vector,vector> BuildingDef = BuildingSpawns.Get(i);
-			string BuildingType = BuildingDef.param1;
+			string SM_BuildingTypes = BuildingDef.param1;
 			vector BuildingPos = MainBuildingHQ.ModelToWorld( BuildingDef.param2 );
 			vector BuildingOri = BuildingDef.param3;
 			vector BuildingDir = MainBuildingHQ.GetDirection();
 			
-			Object HQextra = GetGame().CreateObject( BuildingType, BuildingPos );
+			Object HQextra = GetGame().CreateObject( SM_BuildingTypes, BuildingPos );
 			HQextra.SetPosition( BuildingPos );
 			HQextra.SetDirection( BuildingDir );
 			HQextra.SetOrientation( HQextra.GetOrientation() + BuildingOri );
@@ -1355,7 +1355,7 @@ static bool GetBuildingsAtLoc( string MBuilding, string MLocation, out array<vec
 	
 	static void ShowDebugInfo( PlayerBase player)
 	{
-		//Display as server message to player: if found, Modelvector & buildingtype else actual position of player
+		//Display as server message to player: if found, Modelvector & SM_BuildingTypes else actual position of player
 		Param1<string> Msg1;
 		ref array<Object> OBJLST1 = new array<Object>;
 		ref array<CargoBase> PROXYLST1 = new array<CargoBase>;
@@ -1465,3 +1465,4 @@ static bool GetBuildingsAtLoc( string MBuilding, string MLocation, out array<vec
 	}
 
 }
+
