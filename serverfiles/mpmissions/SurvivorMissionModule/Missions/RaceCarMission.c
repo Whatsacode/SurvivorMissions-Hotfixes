@@ -370,13 +370,13 @@ class RaceCarMission extends SurvivorMissions
 		for ( int r=0; r < BuildingSpawns.Count(); r++ )
 		{
 			Param3<string,vector,vector> BuildingDef = BuildingSpawns.Get(r);
-			string BuildingType = BuildingDef.param1;
+			string SM_BuildingType = BuildingDef.param1;
 			vector BuildingPos = SmokeGrenade.ModelToWorld( BuildingDef.param2 );
 			vector BuildingOri = BuildingDef.param3;
 			vector BuildingDir = SmokeGrenade.GetDirection();
 			
 			BuildingPos[1] = GetGame().SurfaceY( BuildingPos[0], BuildingPos[2] );
-			Object HQextra = GetGame().CreateObject( BuildingType, BuildingPos );
+			Object HQextra = GetGame().CreateObject( SM_BuildingType, BuildingPos );
 			HQextra.SetOrientation(BuildingOri);
 			HQextra.PlaceOnSurface();
 			m_MissionObjects.Insert( HQextra );											
@@ -1264,4 +1264,5 @@ class RaceCarMission extends SurvivorMissions
 		}
 	}
 }
+
 
