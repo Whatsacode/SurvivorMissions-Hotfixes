@@ -654,7 +654,7 @@ class EventsWorldData extends SurvivorMissions
 	
 	static void ShowDebugInfo( PlayerBase player)
 	{
-		//Display as server message to player: if found, Modelvector & buildingtype else actual position of player
+		//Display as server message to player: if found, Modelvector & SM_BuildingType else actual position of player
 		Param1<string> Msg1;
 		ref array<Object> OBJLST1 = new array<Object>;
 		ref array<CargoBase> PROXYLST1 = new array<CargoBase>;
@@ -756,4 +756,5 @@ class EventsWorldData extends SurvivorMissions
 		}
 		Print("[SEM] DEBUG MODE: Map wide raycast END");		
 	}
+
 }
