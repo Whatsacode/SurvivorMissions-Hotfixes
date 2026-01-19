@@ -602,14 +602,7 @@ class EventsWorldData extends SurvivorMissions
 	
 	static bool SecondaryMissionCHK( string type, string location, int nr )
 	{
-		if ( nr == -1 )
-		{
-			for ( int d=0; d < ExtendedPosList.Count(); d++) 
-			TerritoryBldChk.Insert( ExtendedPosList.Get(d) );
 
-			return ExtendedPosList.Count() > 0;
-		}
-		
 		//List all mission types with no sec. MissionBuilding here!
 		ref array<string> ExcludedTypes = new array<string>;
 		ExcludedTypes.InsertArray( {"Apartment","Camp","Graveyard","PlaneCrash","Horde"} );
@@ -617,6 +610,14 @@ class EventsWorldData extends SurvivorMissions
 		ref array<vector> ExtendedPosList = new array<vector>;
 		string building;
 		bool BuildingFound;
+
+		if ( nr == -1 )
+		{
+			for ( int d=0; d < ExtendedPosList.Count(); d++) 
+			TerritoryBldChk.Insert( ExtendedPosList.Get(d) );
+
+			return ExtendedPosList.Count() > 0;
+		}
 		
 		for ( int i=0; i < ExcludedTypes.Count(); i++)	{ if ( type == ExcludedTypes.Get(i) ) return true;}
 		
@@ -786,3 +787,4 @@ class EventsWorldData extends SurvivorMissions
 	}
 
 }
+
